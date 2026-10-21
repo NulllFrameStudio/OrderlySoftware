@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Null Frame Studio / Main Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  <script src="java.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar sm:navbar-expand">
+  <div class="container-fluid d-flex align-items-center gap-2">
+    <img src="images/NFS.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+    <a class="navbar-brand me-auto" href="#"><h1 class="brand-title">Null Frame Studio</h1></a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</nav>
+
+<main class="page">
+
+  <!-- About + Advertisement: stacked on mobile/tablet, side by side on PC -->
+  <div class="top-row">
+    <section class="about">
+      <div class="card">
+        <div class="card-body">
+          <h2>About</h2>
+          <p>Orderly Software® is a trademark of Null Frame Studio® for which registration is planned.</p>
+          <p>Null Frame Studio® is an independent game and software development studio founded by Efe Koç on November 11, 2025.
+            Its mission is to simplify complex tasks and provide users with greater freedom.
+            Prioritizing the safety of all users, the studio offers closed-source software.
+            If you have any concerns, please verify the files using "https://www.virustotal.com/" or another trusted platform.
+            Should you encounter any issues, please delete the product and notify us at "nullframesstudio@gmail.com."
+            Stay safe and healthy. -N.F.S.F.E.K</p>
+        </div>
+      </div>
+    </section>
+
+    <aside id="sidebar">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="Advertisement">
+        <div class="card-body">
+          <p>You can place an advertisement here for $15 per month.
+            There is a recurring fee, which must be paid between the 1st and 5th of each month; otherwise, the agreement will be terminated.</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-row">
+    <section>
+      <div class="card">
+        <div class="card-body">
+          <h2>Contact</h2>
+          <address class="contact-list">
+            <p>Email: <a href="mailto:nullframesstudio@gmail.com">nullframesstudio@gmail.com</a></p>
+            <p>YouTube: <a href="https://www.youtube.com/@FuzuliX">FuzuliX</a></p>
+            <p>YouTube: <a href="https://www.youtube.com/@Null_Frame_Studio">Null Frame Studio</a></p>
+            <p>GitHub: <a href="https://github.com/orderlysoftware">OrderlySoftware</a></p>
+            <p>X.Com: <a href="https://x.com/NullFrameStudio">NullFrameStudio</a></p>
+            <p>itch.io: <a href="https://null-frame.itch.io">Null Frame Studio</a></p>
+          </address>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Products: 1 column on mobile, 2 on tablet, 3 on PC -->
+  <div class="products">
+    <section>
+      <div class="card product-card">
+        <img src="images/saydam.png" class="card-img-top" alt="Orderly File Explorer">
+        <div class="card-body">
+          <h2 class="card-title">Orderly File Explorer</h2>
+          <p class="card-text">Orderly File Explorer is a user-friendly program designed for ease of use; it features a simple interface, offers high performance, and is compatible with Windows 11 and later versions.</p>
+          <a href="https://www.mediafire.com/file/ug5ppo3fa62n512/Orderly_1.3_Fix.rar/file" class="btn-solid">Download</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card product-card">
+        <img src="images/saydam.png" class="card-img-top" alt="Orderly Text Editor">
+        <div class="card-body">
+          <h2 class="card-title">Orderly Text Editor</h2>
+          <p class="card-text">Coming soon</p>
+          <a href="#" class="btn-solid">Download</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card product-card">
+        <img src="images/saydam.png" class="card-img-top" alt="Orderly Image Viewer">
+        <div class="card-body">
+          <h2 class="card-title">Orderly Image Viewer</h2>
+          <p class="card-text">Coming soon</p>
+          <a href="#" class="btn-solid">Download</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "@floating-ui/dom": "https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.7.6/dist/floating-ui.dom.esm.min.js",
+    "vanilla-calendar-pro": "https://cdn.jsdelivr.net/npm/vanilla-calendar-pro@3.4.0/index.mjs"
+  }
+}
+</script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.min.js" integrity="sha384-BJf/nQgxZJU68GxBse97Vdlc8Rh+z9PzzXiS3/BjV+1nQPR7IKn+iJnD3DJvCMaU" crossorigin="anonymous"></script>
+</body>
+</html>
